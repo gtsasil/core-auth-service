@@ -27,7 +27,6 @@ public class AuthService implements UserDetailsService {
         return this.userRepository.findByEmail(username);
     }
 
-    // Retorno 'boolean' conforme indicado no roadmap
     public boolean register(RegisterDTO data) {
         if (this.userRepository.findByEmail(data.email()) != null) {
             return false; // Usuário já cadastrado
@@ -35,7 +34,7 @@ public class AuthService implements UserDetailsService {
         String encryptedPassword = this.passwordEncoder.encode(data.password());
         AppUser newUser = new AppUser(data.email(), encryptedPassword, data.role());
         this.userRepository.save(newUser);
-        return true; // Sucesso
+        return true;
     }
 
 }

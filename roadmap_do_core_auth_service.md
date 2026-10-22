@@ -210,7 +210,7 @@ Pacote: `com.gtsasil.core_auth_service.infra.security`
 
 ---
 
-* [ ] **`domain.user.service.AuthService` (@Service implements `UserDetailsService`):**
+* [x] **`domain.user.service.AuthService` (@Service implements `UserDetailsService`):**
   * **Caminho:** `src/main/java/com/gtsasil/core_auth_service/domain/user/service/AuthService.java`
   * **Injeções:**
     * `@Autowired private UserRepository userRepository;`
