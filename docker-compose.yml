@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: auth_db
+    ports:
+      - "15432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=auth_db
+  sonarqube:
+    image: sonarqube:lts-community
+    container_name: auth_sonarqube
+    ports:
+      - "9000:9000"
