@@ -3,7 +3,6 @@ package com.gtsasil.core_auth_service.api.controller;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,7 +10,6 @@ import com.gtsasil.core_auth_service.api.dto.AuthDTO;
 import com.gtsasil.core_auth_service.api.dto.RegisterDTO;
 import com.gtsasil.core_auth_service.api.dto.TokenResponseDTO;
 import com.gtsasil.core_auth_service.domain.user.entity.AppUser;
-import com.gtsasil.core_auth_service.domain.user.repository.UserRepository;
 import com.gtsasil.core_auth_service.domain.user.service.AuthService;
 import com.gtsasil.core_auth_service.infra.security.TokenService;
 

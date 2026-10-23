@@ -12,4 +12,4 @@ services:
     image: sonarqube:lts-community
     container_name: auth_sonarqube
     ports:
-      - "9000:9000"
+      - "9001:9000"
